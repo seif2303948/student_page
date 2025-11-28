@@ -1,0 +1,258 @@
+.navbar .container-fluid {
+  width: 70%;
+  padding: 15px 0px;
+}
+.navbar .container-fluid .container-text-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.navbar .container-fluid .container-text-1 h5 {
+  margin: 0;
+}
+.navbar .container-fluid .container-text-1 p {
+  margin: 0;
+}
+.navbar .navbar-collapse {
+  gap: 30px;
+}
+.navbar .navbar-collapse .container-text-2 {
+  text-align: end;
+}
+.navbar .navbar-collapse .container-text-2 h5 {
+  margin: 0;
+}
+.navbar .navbar-collapse .container-text-2 p {
+  margin: 0;
+}
+.navbar button {
+  background-color: white;
+  padding: 7px 10px;
+  border: 1px solid rgba(128, 128, 128, 0.2);
+  border-radius: 12px;
+  transition-duration: 0.5s;
+}
+.navbar button:hover {
+  background-color: #155dfc;
+  color: white;
+  border-color: transparent;
+}
+
+section.main .container-navigation {
+  background-color: white;
+  border: 1px solid rgba(128, 128, 128, 0.2);
+  width: 25%;
+  height: 350px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+section.main .container-navigation .navigation-head {
+  margin-left: 30px;
+}
+section.main .container-navigation ul {
+  justify-content: center;
+  gap: 5px;
+  margin: 20px 0px;
+}
+section.main .container-navigation ul li.nav-item {
+  text-align: start;
+  transition-duration: 0.2s;
+  cursor: pointer;
+}
+section.main .container-navigation ul li.nav-item.active {
+  background-color: rgb(207, 226, 255);
+}
+section.main .container-navigation ul li.nav-item.active a {
+  color: blue;
+  border-right: 3px solid blue;
+}
+section.main .container-navigation ul li.nav-item i {
+  margin-left: 30px;
+  margin-right: 30px;
+  font-size: 20px;
+}
+section.main .container-navigation ul li.nav-item .nav-link {
+  color: black;
+}
+section.main .container-navigation ul li.nav-item:hover {
+  background-color: rgb(240, 240, 240);
+}
+
+section.main .container {
+  width: 100%;
+  margin-top: 40px;
+  padding: 10px;
+  display: flex;
+  gap: 20px;
+}
+section.main .container .container-carousel {
+  display: inline-block;
+  width: 70%;
+}
+section.main .container .container-carousel .carousel-item {
+  transition-duration: 0s;
+  transition: none;
+}
+
+.container-carousel .overview .row {
+  width: 100%;
+  justify-content: center;
+  gap: 5%;
+}
+.container-carousel .overview .row .col {
+  width: 45%;
+  height: 100px;
+  background-color: white;
+  border: 1px solid rgba(128, 128, 128, 0.2);
+  border-radius: 10px;
+  padding: 0;
+  margin: 0;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 20px;
+}
+.container-carousel .overview .row .col.bigger {
+  height: 250px;
+  padding: 10px;
+  display: block;
+}
+.container-carousel .overview .row .col.bigger .container-text {
+  display: block;
+  margin: auto;
+  width: 90%;
+  margin-top: 10px;
+}
+.container-carousel .overview .row .col.bigger .container-con {
+  width: 90%;
+  margin: auto;
+}
+.container-carousel .overview .row .col.bigger .container-con .con {
+  margin: 0;
+  margin-top: 10px;
+  width: 100%;
+  height: 35px;
+  border: 1px solid rgba(128, 128, 128, 0.5);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  transition-duration: 0.5s;
+}
+.container-carousel .overview .row .col.bigger .container-con .con:hover {
+  background-color: rgb(216, 216, 216);
+}
+.container-carousel .overview .row .col.bigger .container-con .con i {
+  margin-left: 10px;
+}
+.container-carousel .overview .row .col.bigger .container-con .con p {
+  margin: 0;
+}
+.container-carousel .overview .row .col .icon-1 {
+  background-color: oklch(62.3% 0.214 259.815deg);
+}
+.container-carousel .overview .row .col .icon-2 {
+  background-color: oklch(72.3% 0.219 149.579deg);
+}
+.container-carousel .overview .row .col .icon-3 {
+  background-color: oklch(62.7% 0.265 303.9deg);
+}
+.container-carousel .overview .row .col .icon-4 {
+  background-color: oklch(70.5% 0.213 47.604deg);
+}
+.container-carousel .overview .my-info {
+  justify-content: space-between;
+  width: 100%;
+}
+.container-carousel .overview .my-info .col {
+  height: 20px;
+  border: none;
+  display: block;
+}
+.container-carousel .overview .my-info .col-2 {
+  text-align: end;
+}
+
+.container-icon {
+  width: 45px;
+  height: 48px;
+  font-size: 20px;
+  color: white;
+  background-color: #155dfc;
+  padding: 10px;
+  margin: 0px 15px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.course-catalog {
+  width: 100%;
+}
+.course-catalog .row {
+  width: 100%;
+  margin: 0;
+  gap: 20px;
+}
+.course-catalog .row .col {
+  height: 250px;
+  background-color: white;
+  border: 1px solid rgba(128, 128, 128, 0.2);
+  border-radius: 10px;
+}
+.course-catalog .row .col.enrolled {
+  border-color: oklch(72.3% 0.219 149.579deg);
+}
+.course-catalog .row .col .container-icons {
+  display: flex;
+  margin-top: 15px;
+}
+.course-catalog .row .col .container-icons .container-icon {
+  width: initial;
+  height: initial;
+  font-size: 15px;
+  padding: 5px;
+  margin: 0px 10px;
+}
+.course-catalog .row .col .container-icons .container-icon.subject-code {
+  background-color: black;
+}
+.course-catalog .row .col .container-icons .container-icon.level {
+  background: white;
+  color: black;
+  border: 1px solid rgba(128, 128, 128, 0.2);
+}
+.course-catalog .row .col .container-icons .container-icon.enrolled {
+  background-color: oklch(72.3% 0.219 149.579deg);
+}
+.course-catalog .row .col .container-text {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+p {
+  color: grey;
+}
+
+/*# sourceMappingURL=style.css.map */

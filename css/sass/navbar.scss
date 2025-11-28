@@ -1,0 +1,41 @@
+.navbar{
+    .container-fluid{
+        width: 70%;
+        padding: 15px 0px;
+        .container-text-1{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            h5{
+                margin: 0;
+            }
+            p{
+                margin: 0;
+            }
+        }
+    }
+    .navbar-collapse{
+        gap: 30px;
+        .container-text-2{
+            text-align: end;
+            h5{
+                margin: 0;
+            }
+            p{
+                margin: 0;
+            }
+        }
+    }
+    button{
+        background-color: white;
+        padding: 7px 10px;
+        border: 1px solid rgba(128, 128, 128, 0.2);
+        border-radius: 12px;
+        transition-duration: 0.5s;
+        &:hover{
+            background-color: #155dfc;
+            color: white;
+            border-color: transparent;
+        }
+    }
+}

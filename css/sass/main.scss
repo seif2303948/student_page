@@ -1,0 +1,17 @@
+section.main{
+    .container{
+        width: 100%;
+        margin-top: 40px;
+        padding: 10px;
+        display: flex;
+        gap: 20px;
+        .container-carousel{
+            display: inline-block;
+            width: 70%;
+            .carousel-item{
+                transition-duration: 0s;
+                transition: none;
+            }
+        }
+    }
+}

@@ -1,0 +1,44 @@
+.course-catalog{
+    width: 100%;
+    .row{
+        width: 100%;
+        margin: 0;
+        gap: 20px;
+        .col{
+            height: 250px;
+            background-color: white;
+            border: 1px solid rgba(128, 128, 128, 0.2);
+            border-radius: 10px;
+            &.enrolled{
+                border-color: oklch(0.723 0.219 149.579);
+            }
+            .container-icons{
+                display: flex;
+                margin-top: 15px;
+                .container-icon{
+                    width: initial;
+                    height: initial;
+                    font-size: 15px;
+                    padding: 5px;
+                    margin: 0px 10px;
+                    &.subject-code{
+                        background-color: black;
+                    }
+                    &.level{
+                        background: white;
+                        color: black;
+                        border: 1px solid rgba(128, 128, 128, 0.2);
+                    }
+                    &.enrolled{
+                        background-color: oklch(0.723 0.219 149.579);
+                    }
+                }
+
+            }
+            .container-text{
+                margin-top: 10px;
+                margin-left: 10px;
+            }
+        }
+    }
+}
