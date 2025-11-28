@@ -230,9 +230,49 @@ section.main .container .container-carousel .carousel-item {
 .course-catalog .row .col .container-icons .container-icon.enrolled {
   background-color: oklch(72.3% 0.219 149.579deg);
 }
+.course-catalog .row .col .container-icons .container-icon.not-enrolled {
+  display: none;
+}
+.course-catalog .row .col .container-con {
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+  margin: auto;
+}
+.course-catalog .row .col .container-con .con {
+  display: flex;
+  align-items: center;
+}
+.course-catalog .row .col .container-con .con .container-text p {
+  margin: 0;
+}
+.course-catalog .row .col .container-con .con .container-text h6 {
+  margin: 0;
+}
 .course-catalog .row .col .container-text {
   margin-top: 10px;
   margin-left: 10px;
+}
+.course-catalog .row .col .enrolled-btn {
+  width: 100%;
+  color: grey;
+  font-weight: 600;
+  background-color: white;
+  border: 1px solid rgba(128, 128, 128, 0.5);
+  border-radius: 10px;
+  margin-top: 10px;
+  padding: 10px 0px;
+  cursor: initial;
+}
+.course-catalog .row .col .not-enrolled-btn {
+  width: 100%;
+  color: white;
+  font-weight: 600;
+  background-color: black;
+  border: none;
+  border-radius: 10px;
+  margin-top: 10px;
+  padding: 10px 0px;
 }
 
 * {

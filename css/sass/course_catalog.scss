@@ -32,12 +32,54 @@
                     &.enrolled{
                         background-color: oklch(0.723 0.219 149.579);
                     }
+                    &.not-enrolled{
+                        display: none;
+                    }
                 }
 
+            }
+            .container-con{
+                display: flex;
+                width: 80%;
+                justify-content: space-between;
+                margin: auto;
+                .con{
+                    display: flex;
+                    align-items: center;
+                    .container-text{
+                        p{
+                            margin: 0;
+                        }
+                        h6{
+                            margin: 0;
+                        }
+                    }
+                }
             }
             .container-text{
                 margin-top: 10px;
                 margin-left: 10px;
+            }
+            .enrolled-btn{
+                width: 100%;
+                color: grey;
+                font-weight: 600;
+                background-color: white;
+                border: 1px solid rgb(128, 128, 128, 0.5);
+                border-radius: 10px;
+                margin-top: 10px;
+                padding: 10px 0px;
+                cursor: initial;
+            }
+            .not-enrolled-btn{
+                width: 100%;
+                color: white;
+                font-weight: 600;
+                background-color: black;
+                border: none;
+                border-radius: 10px;
+                margin-top: 10px;
+                padding: 10px 0px;
             }
         }
     }

@@ -1,5 +1,8 @@
 let navLinks = document.querySelectorAll(".main .container-navigation ul a");
 let overviewKeys = document.querySelectorAll(".overview .container-con .con");
+let stillUnEnrollingCourses = document.querySelectorAll(".course-catalog .not-enrolled");
+let btnOfstillUnEnrollingCourses = document.querySelectorAll(".course-catalog .not-enrolled button");
+
 
 
 navLinks.forEach(function(link){
@@ -17,4 +20,10 @@ overviewKeys.forEach(function(key){
         }
     })
 });
+
+btnOfstillUnEnrollingCourses.forEach(function(btn){
+    btn.addEventListener('click',function(){
+        enroll(btn);
+    })
+})
 
