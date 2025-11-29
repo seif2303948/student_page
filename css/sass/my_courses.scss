@@ -1,0 +1,61 @@
+.my-courses{
+    .row{
+        justify-content: center;
+        .col{
+            width: 95%;
+            background-color: var(--main-color);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 20px 0px;
+            .container-icons{
+                display: flex;
+                align-items: center;
+                margin-top: 10px;
+                margin-left: 10px;
+                .container-icon{
+                    width: initial;
+                    height: initial;
+                    box-sizing: initial;
+                    font-size: 15px;
+                    padding: 5px 7px;
+                    margin: 0px 10px;
+                    &.subject-code{
+                        background-color: black;
+                        color: white;
+                    }
+                    &.grade{
+                        background-color: oklch(0.623 0.214 259.815);
+                        color: white;
+                    }
+                }
+            }
+            .container-text{
+                margin-top: 10px;
+                margin-left: 20px;
+            }
+            .container-course{
+                margin: auto;
+                margin-top: 10px;
+                width: 95%;
+                border-radius: 10px;
+                padding: 15px;
+                i{
+                    margin-right: 10px;
+                    font-size: 20px;
+                }
+                &.aq{
+                    background-color: rgb(21, 93, 251,0.2);
+                    i{
+                        color: rgb(21, 93, 251);
+                    }
+                }
+                &.sa{
+                    background-color: rgb(0, 166, 62,0.2);
+                    i{
+                        color: rgb(0, 166, 62);
+                    }
+                }
+            }
+        }
+    }
+}

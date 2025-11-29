@@ -1,0 +1,61 @@
+.timetable{
+    width: 100%;
+    background-color: var(--main-color);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    padding: 15px;
+    i{
+        color: blue;
+    }
+    .container-schedule{
+        width: 100%;
+        .row{
+            width: 100%;
+            margin: auto;
+            gap: 10px;
+            margin-top: 10px;
+            .col{
+                width: 100px;
+                &.clock{
+                    background-color: var(--main-color);
+                    border: none;
+                }
+                &.day{
+                    border: none;
+                    text-align: center;
+                }
+                &.canceled{
+                    opacity: 0;
+                }
+                &[data-occupied="true"]{
+                    height: 120px;
+                    background-color: rgb(207, 226, 255) !important;
+                    border: 2px solid blue ;
+                    border-radius: 8px;
+                    .con{
+                        padding-left: 10px;
+                        padding-top: 10px;
+                        .container-icon{
+                            background-color: black;
+                            height: initial;
+                            padding: 1px 1px;
+                            margin: 0;
+                            font-size: 12px;
+                            border-radius: 5px;
+                        }
+                        p{
+                            font-size: 12px;
+                            .subject{
+                                color: black;
+                            }
+                        }
+                    }
+                }
+                height: 30px;
+                border: 1px solid var(--border-color);
+                border-radius: 5px;
+                padding: 0;
+            }
+        }
+    }
+}

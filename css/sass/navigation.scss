@@ -1,7 +1,7 @@
 section.main{
     .container-navigation{
-        background-color: white;
-        border: 1px solid rgba(128, 128, 128, 0.2);
+        background-color: var(--main-color);
+        border: 1px solid var(--border-color);
         width: 25%;
         height: 350px;
         border-radius: 10px;

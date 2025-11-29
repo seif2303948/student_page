@@ -26,10 +26,10 @@
   margin: 0;
 }
 .navbar button {
-  background-color: white;
-  padding: 7px 10px;
-  border: 1px solid rgba(128, 128, 128, 0.2);
+  background-color: var(--main-color);
+  border: 1px solid var(--border-color);
   border-radius: 12px;
+  padding: 7px 10px;
   transition-duration: 0.5s;
 }
 .navbar button:hover {
@@ -39,8 +39,8 @@
 }
 
 section.main .container-navigation {
-  background-color: white;
-  border: 1px solid rgba(128, 128, 128, 0.2);
+  background-color: var(--main-color);
+  border: 1px solid var(--border-color);
   width: 25%;
   height: 350px;
   border-radius: 10px;
@@ -104,8 +104,8 @@ section.main .container .container-carousel .carousel-item {
 .container-carousel .overview .row .col {
   width: 45%;
   height: 100px;
-  background-color: white;
-  border: 1px solid rgba(128, 128, 128, 0.2);
+  background-color: var(--main-color);
+  border: 1px solid var(--border-color);
   border-radius: 10px;
   padding: 0;
   margin: 0;
@@ -201,8 +201,8 @@ section.main .container .container-carousel .carousel-item {
 }
 .course-catalog .row .col {
   height: 250px;
-  background-color: white;
-  border: 1px solid rgba(128, 128, 128, 0.2);
+  background-color: var(--main-color);
+  border: 1px solid var(--border-color);
   border-radius: 10px;
 }
 .course-catalog .row .col.enrolled {
@@ -273,12 +273,145 @@ section.main .container .container-carousel .carousel-item {
   border-radius: 10px;
   margin-top: 10px;
   padding: 10px 0px;
+  transition-duration: 0.5s;
+}
+.course-catalog .row .col .not-enrolled-btn:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.my-courses .row {
+  justify-content: center;
+}
+.my-courses .row .col {
+  width: 95%;
+  background-color: var(--main-color);
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  padding: 20px 0px;
+}
+.my-courses .row .col .container-icons {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.my-courses .row .col .container-icons .container-icon {
+  width: initial;
+  height: initial;
+  box-sizing: initial;
+  font-size: 15px;
+  padding: 5px 7px;
+  margin: 0px 10px;
+}
+.my-courses .row .col .container-icons .container-icon.subject-code {
+  background-color: black;
+  color: white;
+}
+.my-courses .row .col .container-icons .container-icon.grade {
+  background-color: oklch(62.3% 0.214 259.815deg);
+  color: white;
+}
+.my-courses .row .col .container-text {
+  margin-top: 10px;
+  margin-left: 20px;
+}
+.my-courses .row .col .container-course {
+  margin: auto;
+  margin-top: 10px;
+  width: 95%;
+  border-radius: 10px;
+  padding: 15px;
+}
+.my-courses .row .col .container-course i {
+  margin-right: 10px;
+  font-size: 20px;
+}
+.my-courses .row .col .container-course.aq {
+  background-color: rgba(21, 93, 251, 0.2);
+}
+.my-courses .row .col .container-course.aq i {
+  color: rgb(21, 93, 251);
+}
+.my-courses .row .col .container-course.sa {
+  background-color: rgba(0, 166, 62, 0.2);
+}
+.my-courses .row .col .container-course.sa i {
+  color: rgb(0, 166, 62);
+}
+
+.timetable {
+  width: 100%;
+  background-color: var(--main-color);
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  padding: 15px;
+}
+.timetable i {
+  color: blue;
+}
+.timetable .container-schedule {
+  width: 100%;
+}
+.timetable .container-schedule .row {
+  width: 100%;
+  margin: auto;
+  gap: 10px;
+  margin-top: 10px;
+}
+.timetable .container-schedule .row .col {
+  width: 100px;
+}
+.timetable .container-schedule .row .col.clock {
+  background-color: var(--main-color);
+  border: none;
+}
+.timetable .container-schedule .row .col.day {
+  border: none;
+  text-align: center;
+}
+.timetable .container-schedule .row .col.canceled {
+  opacity: 0;
+}
+.timetable .container-schedule .row .col[data-occupied=true] {
+  height: 120px;
+  background-color: rgb(207, 226, 255) !important;
+  border: 2px solid blue;
+  border-radius: 8px;
+}
+.timetable .container-schedule .row .col[data-occupied=true] .con {
+  padding-left: 10px;
+  padding-top: 10px;
+}
+.timetable .container-schedule .row .col[data-occupied=true] .con .container-icon {
+  background-color: black;
+  height: initial;
+  padding: 1px 1px;
+  margin: 0;
+  font-size: 12px;
+  border-radius: 5px;
+}
+.timetable .container-schedule .row .col[data-occupied=true] .con p {
+  font-size: 12px;
+}
+.timetable .container-schedule .row .col[data-occupied=true] .con p .subject {
+  color: black;
+}
+.timetable .container-schedule .row .col {
+  height: 30px;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  padding: 0;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+:root {
+  --main-color:white;
+  --border-color:rgba(128, 128, 128, 0.2);
 }
 
 img {

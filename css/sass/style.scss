@@ -4,10 +4,16 @@
 @use "./overview.scss" as *;
 @use "./icons.scss" as *;
 @use "./course_catalog.scss" as *;
+@use "./my_courses.scss" as *;
+@use "./timetable.scss" as *;
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+:root{
+    --main-color:white;
+    --border-color:rgba(128, 128, 128, 0.2);
 }
 img{
     width: 100%;
