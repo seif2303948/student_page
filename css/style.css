@@ -403,6 +403,60 @@ section.main .container .container-carousel .carousel-item {
   padding: 0;
 }
 
+.transcript .row {
+  width: 100%;
+  gap: 10px;
+  justify-content: space-between;
+  margin: auto;
+}
+.transcript .row .col {
+  background-color: var(--main-color);
+  border: 1px solid var(--border-color);
+  width: 30%;
+  border-radius: 10px;
+  padding: 0;
+  text-align: center;
+}
+.transcript .row .col span {
+  color: black;
+}
+.transcript .container-table {
+  padding: 10px;
+  background-color: var(--main-color);
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  margin-top: 20px;
+}
+.transcript .container-table i {
+  color: #9810fa;
+}
+.transcript .container-table .table {
+  border: none;
+}
+.transcript .container-table .table thead {
+  border-bottom-color: var(--border-color);
+}
+.transcript .container-table .table .container-icon.code {
+  height: initial;
+  font-size: 12px;
+  font-weight: 500;
+  margin: 0;
+  color: black;
+  background-color: var(--main-color);
+  border: 1px solid var(--border-color);
+}
+.transcript .container-table .table .container-icon.status {
+  height: initial;
+  padding: 5px 30px;
+  margin: 0;
+  font-size: 12px;
+  font-weight: 500;
+  background-color: oklch(62.3% 0.214 259.815deg);
+}
+.transcript .container-table .table tr {
+  border-bottom-color: var(--border-color);
+}
+
 * {
   margin: 0;
   padding: 0;
